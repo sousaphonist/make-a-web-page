@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Benjamin G Stern</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- All code below is modified from the sample given for this project. -->
+<!-- This is an HTML comment. Below this comment is a <head> tag. The head element doesn't contain any content that actually shows up on the page. It is just there to tell the browser important information. -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<head>
+  <!-- Below this is a <title> element.-->
+  <title>BGS Project</title>
+  <!-- Below this is a <link> tag.-->
+  <link rel="stylesheet" href="BGS-style.css">
+</head>
+<body>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <!-- Below this is a <ol> element. "ol" stands for "ordered list." -->
+    <ol>
+      <!-- <li> means "list item" -->
+      <li><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+        <!-- Next I add an "unordered list" within the "list item" of my "ordered list" -->
+        <ul>
+          <li><a href="#lesson-1-1">How the Internet Works</a></li>
+          <li><a href="#lesson-1-2">HTML</a></li>
+          <li><a href="#lesson-1-3">Tags and Elements</a></li>
+          <li><a href="#lesson-1-4">Computers are Stupid</a></li>
+          <li><a href="#lesson-1-5">Inline vs Block Elements</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+        <ul>
+          <li><a href="#lesson-2-1">Developer Tools</a></li>
+          <li><a href="#lesson-2-2">HTML's "tree-like" Structure</a></li>
+          <li><a href="#lesson-2-3">HTML and Indented Boxes</a></li>
+          <li><a href="#lesson-2-4">Text Editors</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+        <ul>
+          <li><a href="#lesson-3-1">Avoiding Repetition</a></li>
+          <li><a href="#lesson-3-2">CSS</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+  <h1>Important Concepts</h1>
+  <div class="lesson">
+    <h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+    <div class="concept" id="lesson-1-1">
+      <div class="concept-title">
+        How the Internet Works
+      </div>
+      <div class="concept-description">
+        <p>
+          The internet is a series of interconnected computers. When you attempt to open a webpage, your computer sends an
+          <em>HTTP Request</em> to
+          a <em>server</em>.
+        </p>
+        <p>
+          The server then finds the appropriate HTML document and sends
+          it back to the user's computer where a <em>
+          web browser</em> interprets the page and displays it on
+          the user's screen.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-2">
+      <div class="concept-title">
+        HTML
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML stands for <em>Hypertext Markup
+          Language.</em> HTML documents form the majority of the
+          content on the web.
+        </p>
+        <p>
+          HTML documents contain <em>text
+          content</em> which describes "what you see" and
+          <em>markup</em> which describes
+          "how it looks".
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-3">
+      <div class="concept-title">
+        Tags and Elements
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML documents are made of HTML
+          <b>elements</b>. When writing HTML, we
+          tell browsers the type of each element by using HTML
+          <b>tags</b>.
+        </p>
+        <p>
+          A tag takes the form < tag > content < / tag >. The "/" denotes that it is a close-tag. Without it, the tag would run to the end of the doctument. This is where most code errors occur, as I shall explain below.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-4">
+      <div class="concept-title">
+        Computers are Stupid
+      </div>
+      <div class="concept-description">
+        <p>
+          As humans, we can often see someone's little mistake, understand what they meant it to be, and take it as such. Computers, however, cannot do this. They are rigidly logic-driven machines, and can only see what is right in front of them. This is where most errors in code appear - due simply to a missing bracket or close tag.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-5">
+      <div class="concept-title">
+        Inline vs Block Elements
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML elements are either <b>inline</b>
+          or <b>block</b>.
+        </p>
+        <p>
+          Block elements form
+          an "invisible box" around the content inside of them, and are useful to break up text into paragragraphs or for giving elements a more visually appealing layout.
+        </p>
+        <p>
+          Inline elements effect how the text itself is presented. For example, they can make text <b>bold</b> or <em>italicized</em>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2 id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+    <div class="concept" id="lesson-2-1">
+      <div class="concept-title">
+        Developer Tools
+      </div>
+      <div class="concept-description">
+        <p>
+          Everything displayed on a webpage, from titles and paragraphs to pictures and videos, are contained within their own little box. <em>Developer Tools</em>, often simply referred to as <em>Dev Tools</em>, allow you see all the boxes that make up a given webpage, as well as all the boders and/or spacing around them. Additionally, Dev Tools may be used to view the page's CSS (more on that later).
+        </p>
+
+        <p>
+         You can then play around with the code of the website - adding, deleting, or simply modifying whatever you want. These changes are only temporary, only you can see them and only for as long as you stay on the webpage; you can also revert the page back to normal simply by refreshing the page.
+        </p>
+        <p>
+          Opening up and the exact form of the Dev Tools is different for each browser. In general, you should be able to find them in the same place as <b>Settings</b> or <b>Options</b> and looking for <b>Tools</b>. Of course, when did doubt, just <b>Google</b> it.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-2">
+      <div class="concept-title">
+        The "tree-like structure" of HTML
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML is said to have a "Tree-Like Structure" in that practically every webpage is set up as boxes within boxes within boxes. Think of a webpage as like the quest of the "Lord of the Rings" book trilogy - each book would be it's own box, each chapter would be a sub-box, and each paragraph would be a sub-sub-box.
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-3">
+      <div class="concept-title">
+        HTML and Indented Boxes
+      </div>
+      <div class="concept-description">
+        <p>
+          When you read an HTML document as
+          <em>text</em>, you see a wave of
+          changing indentations going up and down the left side
+          of the document. The more indented an element is, the
+          more deeply nested its corresponding "box" is. This can be useful in trying to track down the sources of errors, as well as making sure all necessary paragraph tags are in place.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-4">
+      <div class="concept-title">
+        Text Editors
+      </div>
+      <div class="concept-description">
+        <p>
+          When writing code, programmers use special text editors. Some common ones include Sublime Text, Scratchpad, and Codepen. These can make programming easier, by automatically generating the necessary close-tags and/or providing a real-time result of the code.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2 id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+    <div class="concept" id="lesson-3-1">
+      <div class="concept-title">
+        Avoiding Repetition
+      </div>
+      <div class="concept-description">
+        <p>
+          Avoiding repetition is important for a variety of reasons.
+        </p>
+        <p>
+          <b>Consistency:</b> Often, there will be multiple boxes within the HTML which should all look the same. If you add the style choices to each one individually, then every time you change your mind about how you want it to look, you'd have to remember to change <em>each and every box <b>by hand</b></em>. Obviously, this'd get very tiresome, so it's better to just have once place where you can change the code <em>once</em> and have it affect every box.
+        </p>
+        <p>
+          <b>Avoiding Errors:</b> The more characters are needed to produce your code, the more likely it is you're going to make a mistake. As I mentioned before, even the smallest mis-type can result in a page-breaking error, so it's best to streamline your code as much as possible.
+        </p>  
+      </div>
+    </div>
+    <div class="concept" id="lesson-3-2">
+      <div class="concept-title">
+        CSS
+      </div>
+      <div class="concept-description">
+        <p>
+          <em>CSS</em> stands for <em>Cascading Style Sheets</em> and they allow for the modifying of multiple pieces of code at the same time. This is done by giving the box in question a <em>class</em> when it is created. Then, in a separate but connected CSS page, you specify the look you want for all boxes designated with that same class. These can cover everything from margin sizes and 
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</body>
+
+</html>
